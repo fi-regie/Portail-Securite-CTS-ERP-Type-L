@@ -1,6 +1,7 @@
 # 🏕️ Sécurité Structures Itinérantes CTS & ERP Type L
 
 ## 🌐 Accès Direct
+
 **Application en ligne** : [Portail de Sécurité CTS & ERP Type L](https://fi-regie.github.io/Portail-Securite-CTS-ERP-Type-L/)
 
 ## 📖 Présentation Générale
@@ -12,36 +13,42 @@ Portail web professionnel complet qui centralise les applications open source po
 ### **6 Applications Complémentaires**
 
 #### **1. 🏕️ Structures Itinérantes**
+
 - Simulateur météo et vent pour chapiteaux
 - Checklists de contrôle conformes à l'Arrêté du 23 janvier 1985
 - Échelle de Beaufort interactive
 - Outil professionnel pour la sécurité des CTS
 
 #### **2. 🧮 Simulation Sécurité**
+
 - Calculateur interactif de catégorie ERP
 - Dimensionnement des dégagements et unités de passage
 - Graphiques interactifs de sécurité incendie
 - Simulateurs pour la classification ERP Type L
 
 #### **3. 🎓 Formation Sécurité**
+
 - 6 modules de formation complète
 - Quiz de validation des connaissances
 - Attestation de formation téléchargeable
 - Formation interactive sur la sécurité ERP Type L
 
 #### **4. ⚖️ Règlementation CTS**
+
 - Base de données réglementaire complète
 - Recherche intelligente dans les textes officiels
 - Veille réglementaire actualisée
 - Textes consolidés pour chapiteaux, tentes et structures
 
 #### **5. ❓ Quiz du Régisseur**
+
 - Questions pratiques sur la sécurité
 - Corrections détaillées et pédagogiques
 - Progression personnalisée
 - Test ludique des connaissances ERP Type L et CTS
 
 #### **6. 👥 Communauté Open Source**
+
 - Développement collaboratif
 - Projet non commercial
 - Partage des connaissances
@@ -96,6 +103,7 @@ const tabState = {
 };
 
 📚 Sources Réglementaires
+
 Cadre Réglementaire Couvert
 
     📜 ERP Type L : Salles à usage d'audition, conférences, réunions, spectacles
@@ -107,6 +115,7 @@ Cadre Réglementaire Couvert
     📜 Sécurité incendie : Réglementations ERP applicables
 
 🚀 Installation & Utilisation
+
 Accès Immédiat en Ligne
 
     Visitez : https://fi-regie.github.io/Portail-Securite-CTS-ERP-Type-L/
@@ -138,6 +147,7 @@ Applications Externes (Intégrées)
     ❓ Quiz du Régisseur : https://fi-regie.github.io/Quiz-CTS/
 
 📱 Compatibilité
+
 Navigateurs Supportés
 
     ✅ Chrome 90+ (recommandé)
@@ -161,6 +171,7 @@ Performances
     Stockage local : Sauvegarde des préférences
 
 👥 Public Cible
+
 Professionnels du Spectacle
 
     🎪 Régisseurs : Techniciens responsables de la sécurité
@@ -182,6 +193,7 @@ Organismes et Contrôleurs
     🏫 Centres de formation : SSIAP, régisseurs, techniciens
 
 🎯 Objectifs du Projet
+
 Triple Mission
 
     Améliorer la Sécurité : Fournir des outils pratiques pour une meilleure application des règles
@@ -191,6 +203,7 @@ Triple Mission
     Créer une Communauté : Développer un écosystème collaboratif open source dédié à la sécurité des événements culturels
 
 🛠️ Personnalisation et Extension
+
 Adaptabilité
 
     Design modulaire : Chaque application peut évoluer indépendamment
@@ -212,6 +225,7 @@ Contributions Possibles
     🎨 Design et UX : Améliorations d'interface
 
 ⚠️ Avertissements Importants
+
 Usage Professionnel
 
     ⚠️ Ces outils sont des aides à la décision - Ils ne remplacent pas :
@@ -235,6 +249,7 @@ Couverture Juridique
     ⚖️ Responsabilité : L'utilisateur reste responsable des décisions prises
 
 🌟 Roadmap de Développement
+
 Évolutions Planifiées 2025-2026
 
     Mode hors ligne complet pour toutes les applications
@@ -258,6 +273,7 @@ Améliorations Techniques
     Internationalisation : Support multi-langues
 
 📞 Support et Contact
+
 Support Technique et Questions
 
     🐛 Signalement de problèmes : Issues GitHub du dépôt correspondant
@@ -283,6 +299,7 @@ Contributions Open Source
     💬 Discussions : Partagez vos retours d'expérience
 
 📄 Licence et Conditions d'Utilisation
+
 Licence Open Source
 
     ✅ Utilisation gratuite : Pour tous les professionnels
@@ -295,13 +312,13 @@ Licence Open Source
 
 Attribution Requise
 
-
 Portail de Sécurité CTS & ERP Type L - Suite Open Source
 © 2025 - Développé par Philippe Potier et collaborateurs
 Source : https://github.com/fi-regie/Portail-Securite-CTS-ERP-Type-L
 Applications : https://fi-regie.github.io/Portail-Securite-CTS-ERP-Type-L/
 
 🙏 Remerciements
+
 Contributeurs et Collaborateurs
 
     Philippe Potier : Conception, développement, coordination
@@ -340,7 +357,9 @@ Contact principal : philippe.potier-regie@proton.me
 Licence : Open Source - Usage professionnel autorisé
 
 « La sécurité dans le spectacle vivant : une responsabilité partagée, des outils communs. » 🎭🔒🏕️
+
 🔗 Liens Rapides Vers les Applications
+
 Accès Direct aux Outils
 
     🏠 Portail d'Accueil - Centre de toutes les applications
