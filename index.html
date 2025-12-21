@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portail de Sécurité CTS & ERP Type L - Suite Open Source</title>
+    <title>Portail de Sécurité CTS & ERP Type L</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,173 +17,77 @@
 
     <style>
         /* Styles pour tous les onglets */
-    .tab-content {
-        display: none;
-    }
-
-    .tab-content.active {
-        display: block;
-        animation: fadeIn 0.3s ease-in;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .nav-tab.active {
-        border-bottom-color: #ea580c;
-        color: #ea580c;
-        font-weight: 600;
-    }
-
-    /* Scrollbar personnalisée */
-    .custom-scroll::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-
-    .custom-scroll::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 4px;
-    }
-
-    .custom-scroll::-webkit-scrollbar-thumb {
-        background: #c1c1c1;
-        border-radius: 4px;
-    }
-
-    .custom-scroll::-webkit-scrollbar-thumb:hover {
-        background: #a1a1a1;
-    }
-
-    /* Pulse animation for beta badge */
-    @keyframes pulse {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.7;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .pulse {
-        animation: pulse 2s infinite;
-    }
-
-    /* Réduction de 5% de l'échelle pour la page d'accueil */
-    .page-scale-95 {
-        transform: scale(0.95);
-        transform-origin: top center;
-    }
-
-    /* AJOUTS POUR MOBILE - Styles responsives */
-    
-    /* Empêcher le débordement horizontal */
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-    
-    /* Pour les écrans très petits */
-    @media (max-width: 640px) {
-        /* Ajuster le padding pour économiser de l'espace */
-        .px-4.sm\:px-6.lg\:px-8 {
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-        }
-        
-        /* Réduire le padding de la navigation des onglets */
-        .nav-tab {
-            padding-left: 0.75rem !important;
-            padding-right: 0.75rem !important;
-            padding-top: 0.75rem !important;
-            padding-bottom: 0.75rem !important;
-            font-size: 0.875rem !important;
-        }
-        
-        /* Ajuster l'en-tête principal */
-        .h-16 {
-            height: 3.5rem !important;
-        }
-        
-        /* Réduire la taille du titre */
-        .text-xl {
-            font-size: 1.125rem !important;
-            line-height: 1.75rem !important;
-        }
-        
-        /* Cacher l'icône dans les boutons de navigation si nécessaire */
-        .nav-tab i {
-            margin-right: 0.25rem !important;
-        }
-        
-        /* Ajuster l'espacement dans le pied de page */
-        .py-8 {
-            padding-top: 1.5rem !important;
-            padding-bottom: 1.5rem !important;
-        }
-    }
-    
-    /* Pour les écrans encore plus petits (téléphones) */
-    @media (max-width: 480px) {
-        /* Ajuster encore plus les onglets */
-        .nav-tab {
-            padding-left: 0.5rem !important;
-            padding-right: 0.5rem !important;
-            padding-top: 0.5rem !important;
-            padding-bottom: 0.5rem !important;
-            font-size: 0.8125rem !important;
-        }
-        
-        /* Masquer certains éléments pour économiser de l'espace */
-        .text-sm.font-normal.uppercase.ml-2.tracking-widest {
+        .tab-content {
             display: none;
         }
-        
-        /* Réduire l'espace entre les éléments dans l'en-tête */
-        .space-x-4 > * + * {
-            margin-left: 0.5rem !important;
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
         }
-        
-        /* Ajuster le bouton "Retour à l'accueil" */
-        .text-sm.flex.items-center {
-            font-size: 0.75rem !important;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        
-        .text-sm.flex.items-center i {
-            margin-right: 0.25rem !important;
+
+        .nav-tab.active {
+            border-bottom-color: #ea580c;
+            color: #ea580c;
+            font-weight: 600;
         }
-    }
-    
-    /* Pour les tablettes */
-    @media (min-width: 641px) and (max-width: 768px) {
-        .nav-tab {
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-            font-size: 0.9375rem !important;
+
+        /* Scrollbar personnalisée */
+        .custom-scroll::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
         }
-    }
-    
-    /* Ajouter un défilement horizontal pour la navigation si nécessaire */
-    .flex.overflow-x-auto.no-scrollbar {
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    
-    .flex.overflow-x-auto.no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
+
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: #a1a1a1;
+        }
+
+        /* Pulse animation for beta badge */
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Réduction de 5% de l'échelle pour la page d'accueil */
+        .page-scale-95 {
+            transform: scale(0.95);
+            transform-origin: top center;
+        }
     </style>
 
 </head>
