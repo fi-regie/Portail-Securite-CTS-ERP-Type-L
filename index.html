@@ -83,6 +83,11 @@
             animation: pulse 2s infinite;
         }
 
+        /* Réduction de 5% de l'échelle pour la page d'accueil */
+        .page-scale-95 {
+            transform: scale(0.95);
+            transform-origin: top center;
+        }
     </style>
 
 </head>
@@ -648,7 +653,7 @@
     </main>
 
     <!-- Pied de page -->
-    <footer class="bg-[#f8f9fa] text-[#495057] py-8 mt-12 border-t border-[#dee2e6]">
+    <footer class="bg-[#e9ecef] text-[#495057] py-8 mt-12 border-t border-[#dee2e6]">
         <div class="max-w-8xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
@@ -663,7 +668,7 @@
                 </div>
 
                 <!-- Deuxième colonne avec bordure gauche -->
-                <div class="md:border-l md:border-[#dee2e6] md:pl-8">
+                <div class="md:border-l md:border-[] md:pl-8">
                     <h4 class="text-xl font-bold mb-4 text-[#343a40]">Applications Connexes</h4>
 
                     <div class="space-y-4">
@@ -704,7 +709,7 @@
                 </div>
 
                 <!-- Troisième colonne avec bordure gauche -->
-                <div class="md:border-l md:border-[#dee2e6] md:pl-8">
+                <div class="md:border-l md:border-[] md:pl-8">
                     <h4 class="text-xl font-bold mb-4 text-[#343a40]">Formation</h4>
                     <div class="space-y-4">
                         <a href="https://fi-regie.github.io/Formation-Securite-ERP/" target="_blank"
@@ -733,7 +738,7 @@
                 </div>
             </div>
 
-            <div class="mt-8 pt-8 border-t border-[#dee2e6] text-center text-sm text-[#6c757d]">
+            <div class="mt-8 pt-8 border-t border-[#ced4da] text-center text-sm text-[#6c757d]">
                 <p>
                     <i class="fas fa-gavel mr-2"></i>
                     Sécurité Structures Itinérantes - CTS & ERP Type L
@@ -794,6 +799,7 @@
 
             // Mettre à jour l'URL avec l'historique
             history.pushState({ tab: tabId }, '', `#${tabId}`);
+            window.scrollTo(0, 0); // ← AJOUT: S'assurer qu'on reste en haut de la page
 
             // Cacher tous les onglets
             document.querySelectorAll('.tab-content').forEach(tab => {
@@ -835,6 +841,9 @@
 
         // Gestion de l'historique navigateur (boutons avant/arrière)
         window.addEventListener('popstate', function (event) {
+            // S'assurer qu'on reste en haut de la page
+            window.scrollTo(0, 0);
+            
             if (event.state && event.state.tab) {
                 // Mettre à jour l'état sans ajouter à l'historique (pour éviter les boucles)
                 tabState.current = event.state.tab;
@@ -860,6 +869,11 @@
 
         // Vérifier l'hash au chargement
         window.addEventListener('DOMContentLoaded', function () {
+            // AJOUT: Empêcher le défilement automatique au chargement de la page
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+            }
+            
             const hash = window.location.hash.substring(1);
             const validTabs = ['accueil', 'structures', 'simulation', 'formation', 'reglementation', 'quiz'];
 
