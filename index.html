@@ -799,6 +799,7 @@
 
             // Mettre à jour l'URL avec l'historique
             history.pushState({ tab: tabId }, '', `#${tabId}`);
+            window.scrollTo(0, 0); // ← AJOUT: S'assurer qu'on reste en haut de la page
 
             // Cacher tous les onglets
             document.querySelectorAll('.tab-content').forEach(tab => {
@@ -840,6 +841,9 @@
 
         // Gestion de l'historique navigateur (boutons avant/arrière)
         window.addEventListener('popstate', function (event) {
+            // S'assurer qu'on reste en haut de la page
+            window.scrollTo(0, 0);
+
             if (event.state && event.state.tab) {
                 // Mettre à jour l'état sans ajouter à l'historique (pour éviter les boucles)
                 tabState.current = event.state.tab;
@@ -865,6 +869,11 @@
 
         // Vérifier l'hash au chargement
         window.addEventListener('DOMContentLoaded', function () {
+            // AJOUT: Empêcher le défilement automatique au chargement de la page
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+            }
+
             const hash = window.location.hash.substring(1);
             const validTabs = ['accueil', 'structures', 'simulation', 'formation', 'reglementation', 'quiz'];
 
