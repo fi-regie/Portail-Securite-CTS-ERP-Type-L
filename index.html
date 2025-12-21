@@ -82,7 +82,14 @@
         .pulse {
             animation: pulse 2s infinite;
         }
+
+        /* Réduction de 5% de l'échelle pour la page d'accueil */
+        .page-scale-95 {
+            transform: scale(0.95);
+            transform-origin: top center;
+        }
     </style>
+
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -99,7 +106,7 @@
                     </h1>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button onclick="switchTab('accueil')"
+                    <button onclick="window.location.hash='accueil'; switchTab('accueil'); window.scrollTo(0, 0);"
                         class="text-sm text-stone-500 hover:text-orange-600 transition flex items-center">
                         <i class="fas fa-arrow-left mr-2"></i>
                         Retour à l'accueil
@@ -148,10 +155,10 @@
         </div>
     </div>
 
-
     <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
 
         <!-- ==================== ONGLET ACCUEIL ==================== -->
+
         <div id="accueil" class="tab-content active">
             <div class="max-w-8xl mx-auto">
 
@@ -205,21 +212,21 @@
                     </p>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-orange-500">
+                        <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-rose-500">
                             <span class="block text-xs font-bold text-stone-400 uppercase tracking-wider mb-1">Mission
                                 1</span>
                             <span class="font-medium">Améliorer la Sécurité</span>
                             <p class="text-sm text-stone-600 mt-1">Fournir des outils pratiques pour une meilleure
                                 application des règles de sécurité dans le spectacle vivant.</p>
                         </div>
-                        <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-slate-600">
+                        <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-violet-500">
                             <span class="block text-xs font-bold text-stone-400 uppercase tracking-wider mb-1">Mission
                                 2</span>
                             <span class="font-medium">Former et Informer</span>
                             <p class="text-sm text-stone-600 mt-1">Rendre accessible la réglementation complexe grâce à
                                 des interfaces pédagogiques et interactives.</p>
                         </div>
-                        <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-emerald-500">
+                        <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-cyan-500">
                             <span class="block text-xs font-bold text-stone-400 uppercase tracking-wider mb-1">Mission
                                 3</span>
                             <span class="font-medium">Créer une Communauté</span>
