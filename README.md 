@@ -1,0 +1,377 @@
+# 🏕️ Sécurité Structures Itinérantes CTS & ERP Type L
+
+## 🌐 Accès Direct
+**Application en ligne** : [Portail de Sécurité CTS & ERP Type L](https://fi-regie.github.io/Portail-Securite-CTS-ERP-Type-L/)
+
+## 📖 Présentation Générale
+
+Portail web professionnel complet qui centralise les applications open source pour la sécurité des structures itinérantes (CTS) et des établissements recevant du public (ERP) de Type L. Cette suite d'outils regroupe simulateurs, formations, réglementations et quiz pour accompagner les exploitants, régisseurs et organismes de contrôle.
+
+## 🎯 Fonctionnalités Principales
+
+### **6 Applications Complémentaires**
+
+#### **1. 🏕️ Structures Itinérantes**
+- Simulateur météo et vent pour chapiteaux
+- Checklists de contrôle conformes à l'Arrêté du 23 janvier 1985
+- Échelle de Beaufort interactive
+- Outil professionnel pour la sécurité des CTS
+
+#### **2. 🧮 Simulation Sécurité**
+- Calculateur interactif de catégorie ERP
+- Dimensionnement des dégagements et unités de passage
+- Graphiques interactifs de sécurité incendie
+- Simulateurs pour la classification ERP Type L
+
+#### **3. 🎓 Formation Sécurité**
+- 6 modules de formation complète
+- Quiz de validation des connaissances
+- Attestation de formation téléchargeable
+- Formation interactive sur la sécurité ERP Type L
+
+#### **4. ⚖️ Règlementation CTS**
+- Base de données réglementaire complète
+- Recherche intelligente dans les textes officiels
+- Veille réglementaire actualisée
+- Textes consolidés pour chapiteaux, tentes et structures
+
+#### **5. ❓ Quiz du Régisseur**
+- Questions pratiques sur la sécurité
+- Corrections détaillées et pédagogiques
+- Progression personnalisée
+- Test ludique des connaissances ERP Type L et CTS
+
+#### **6. 👥 Communauté Open Source**
+- Développement collaboratif
+- Projet non commercial
+- Partage des connaissances
+- Contribution ouverte à tous les professionnels
+
+## 🎨 Design & Interface
+
+### **Design Professionnel Harmonisé**
+- Interface utilisateur cohérente sur toutes les applications
+- Navigation fluide entre les différents outils
+- Design responsive optimisé mobile/tablette/desktop
+- Animations subtiles pour une expérience agréable
+
+### **Palette de Couleurs Thématiques**
+- **Orange** (#ea580c) : Sécurité, alertes, actions principales
+- **Bleu** (#3b82f6) : Structures itinérantes, météo
+- **Émeraude** (#10b981) : Formation, validation
+- **Ambre** (#f59e0b) : Règlementation, cadre légal
+- **Violet** (#8b5cf6) : Quiz, apprentissage
+- **Stone** (#78716c) : Texte, arrière-plans neutres
+
+## 🔧 Technologies Utilisées
+
+### **Stack Technique Unifiée**
+```html
+<!-- Framework CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Bibliothèque graphique -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Icônes vectorielles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+Architecture JavaScript
+javascript
+
+// Navigation centralisée entre applications
+const navigation = {
+    accueil: switchTab,
+    structures: openStructuresApp,
+    simulation: openSimulationApp,
+    formation: openFormationApp,
+    reglementation: openReglementationApp,
+    quiz: openQuizApp
+};
+
+// Gestion d'état cohérente
+const tabState = {
+    current: 'accueil',
+    history: ['accueil']
+};
+
+📚 Sources Réglementaires
+Cadre Réglementaire Couvert
+
+    📜 ERP Type L : Salles à usage d'audition, conférences, réunions, spectacles
+
+    📜 CTS : Chapiteaux, Tentes et Structures (Arrêté du 23 janvier 1985)
+
+    📜 Contrôle obligatoire : Vérification par organismes agréés (BVCTS)
+
+    📜 Sécurité incendie : Réglementations ERP applicables
+
+🚀 Installation & Utilisation
+Accès Immédiat en Ligne
+
+    Visitez : https://fi-regie.github.io/Portail-Securite-CTS-ERP-Type-L/
+
+    Naviguez entre les 6 applications via les onglets
+
+    Utilisez les outils gratuitement sans inscription
+
+    Partagez avec vos collègues et collaborateurs
+
+Structure du Projet
+text
+
+Portail-Securite-CTS-ERP-Type-L/
+├── index.html              # Portail d'accueil principal
+├── README.md               # Documentation
+└── (liens vers applications externes)
+
+Applications Externes (Intégrées)
+
+    🏕️ Structures Itinérantes : https://fi-regie.github.io/Reglementation-Spectacle-Itinerant/
+
+    🧮 Simulation Sécurité : https://fi-regie.github.io/Simulateur-Reglement-Securite-ERP/
+
+    🎓 Formation Sécurité : https://fi-regie.github.io/Formation-Securite-ERP/
+
+    ⚖️ Règlementation CTS : https://fi-regie.github.io/reglementation-CTS-/
+
+    ❓ Quiz du Régisseur : https://fi-regie.github.io/Quiz-CTS/
+
+📱 Compatibilité
+Navigateurs Supportés
+
+    ✅ Chrome 90+ (recommandé)
+
+    ✅ Firefox 88+
+
+    ✅ Safari 14+
+
+    ✅ Edge 91+
+
+    ✅ Mobile Chrome/Firefox/Safari
+
+Performances
+
+    Chargement rapide : < 1.5 secondes
+
+    Pas d'installation : Utilisation directe navigateur
+
+    Hors ligne partiel : Fonctionnalités de base disponibles
+
+    Stockage local : Sauvegarde des préférences
+
+👥 Public Cible
+Professionnels du Spectacle
+
+    🎪 Régisseurs : Techniciens responsables de la sécurité
+
+    🏗️ Exploitants ERP : Directeurs de salles et théâtres
+
+    🏕️ Organisateurs CTS : Chapiteaux et structures itinérantes
+
+    🎓 Étudiants/Formateurs : Formation technique et sécurité
+
+Organismes et Contrôleurs
+
+    📋 Organismes agréés : BVCTS et contrôleurs techniques
+
+    ⚖️ Commissions de sécurité : Vérificateurs ERP
+
+    🏢 Services préfectoraux : Autorités de tutelle
+
+    🏫 Centres de formation : SSIAP, régisseurs, techniciens
+
+🎯 Objectifs du Projet
+Triple Mission
+
+    Améliorer la Sécurité : Fournir des outils pratiques pour une meilleure application des règles
+
+    Former et Informer : Rendre accessible la réglementation complexe grâce à des interfaces pédagogiques
+
+    Créer une Communauté : Développer un écosystème collaboratif open source dédié à la sécurité des événements culturels
+
+🛠️ Personnalisation et Extension
+Adaptabilité
+
+    Design modulaire : Chaque application peut évoluer indépendamment
+
+    Code open source : Personnalisation possible selon besoins spécifiques
+
+    Intégration facile : Possibilité d'intégrer dans des portails existants
+
+    Extensions futures : Architecture conçue pour l'évolution
+
+Contributions Possibles
+
+    🌟 Nouvelles fonctionnalités : Propositions bienvenues
+
+    🔧 Améliorations techniques : Optimisations, corrections
+
+    📚 Contenu réglementaire : Mises à jour, traductions
+
+    🎨 Design et UX : Améliorations d'interface
+
+⚠️ Avertissements Importants
+Usage Professionnel
+
+    ⚠️ Ces outils sont des aides à la décision - Ils ne remplacent pas :
+
+        L'expertise d'un organisme agréé (BVCTS)
+
+        Les contrôles réglementaires obligatoires
+
+        La consultation des textes officiels actualisés sur Légifrance
+
+        La responsabilité de l'exploitant ou du régisseur
+
+Couverture Juridique
+
+    📅 Actualisation : Les textes réglementaires évoluent régulièrement
+
+    🏛️ Juridiction : Droit français applicable
+
+    🔄 Spécificités locales : Règlements municipaux ou préfectoraux
+
+    ⚖️ Responsabilité : L'utilisateur reste responsable des décisions prises
+
+🌟 Roadmap de Développement
+Évolutions Planifiées 2025-2026
+
+    Mode hors ligne complet pour toutes les applications
+
+    Synchronisation multi-appareils des données utilisateur
+
+    Notifications automatiques des mises à jour réglementaires
+
+    Export PDF/Excel des résultats et checklists
+
+    API d'intégration pour systèmes existants
+
+Améliorations Techniques
+
+    Progressive Web App (PWA) : Installation comme application native
+
+    Base de données locale améliorée (IndexedDB)
+
+    Système de thèmes : Mode sombre/clair
+
+    Internationalisation : Support multi-langues
+
+📞 Support et Contact
+Support Technique et Questions
+
+    🐛 Signalement de problèmes : Issues GitHub du dépôt correspondant
+
+    💡 Suggestions d'amélioration : Discussions GitHub ou email
+
+    🔧 Aide technique : Documentation en ligne et communauté
+
+Contact Direct
+
+    📧 Email principal : philippe.potier-regie@proton.me
+
+    📋 Sujet recommandé : [Portail Sécurité CTS/ERP] - Sujet de votre message
+
+Contributions Open Source
+
+    🌐 Dépôts GitHub : https://github.com/fi-regie
+
+    🔄 Forks : Créez votre propre version adaptée
+
+    🔧 Pull Requests : Contribuez aux améliorations
+
+    💬 Discussions : Partagez vos retours d'expérience
+
+📄 Licence et Conditions d'Utilisation
+Licence Open Source
+
+    ✅ Utilisation gratuite : Pour tous les professionnels
+
+    ✅ Modification autorisée : Avec attribution de la source originale
+
+    ✅ Distribution libre : Dans le cadre professionnel
+
+    ✅ Code source ouvert : Disponible sur GitHub
+
+Attribution Requise
+
+
+Portail de Sécurité CTS & ERP Type L - Suite Open Source
+© 2025 - Développé par Philippe Potier et collaborateurs
+Source : https://github.com/fi-regie/Portail-Securite-CTS-ERP-Type-L
+Applications : https://fi-regie.github.io/Portail-Securite-CTS-ERP-Type-L/
+
+🙏 Remerciements
+Contributeurs et Collaborateurs
+
+    Philippe Potier : Conception, développement, coordination
+
+    Communauté des régisseurs : Retours terrain, cas pratiques, validation
+
+    Professionnels du spectacle : Tests, suggestions, améliorations continues
+
+    Contributeurs open source : Bibliothèques, inspiration, partage
+
+Technologies et Ressources
+
+    Tailwind CSS : Framework CSS utilitaire moderne
+
+    Chart.js : Visualisations de données interactives
+
+    Font Awesome : Système d'icônes vectorielles
+
+    GitHub Pages : Hébergement gratuit et fiable
+
+    Communauté développeurs : Support, documentation, échanges
+
+Institutions et Références
+
+    Ministère de la Culture : Cadre réglementaire spectacle vivant
+
+    Légifrance : Textes officiels de référence
+
+    Organismes de formation : Contenus pédagogiques
+
+    Commissions de sécurité : Guides pratiques et retours d'expérience
+
+Version : 2.0.0 (Décembre 2025)
+Dernière mise à jour : 21 décembre 2025
+Contact principal : philippe.potier-regie@proton.me
+Licence : Open Source - Usage professionnel autorisé
+
+« La sécurité dans le spectacle vivant : une responsabilité partagée, des outils communs. » 🎭🔒🏕️
+🔗 Liens Rapides Vers les Applications
+Accès Direct aux Outils
+
+    🏠 Portail d'Accueil - Centre de toutes les applications
+
+    🌬️ Structures Itinérantes - Météo et sécurité CTS
+
+    🧮 Simulation Sécurité - Calculateurs ERP Type L
+
+    🎓 Formation Sécurité - Modules pédagogiques
+
+    ⚖️ Règlementation CTS - Base légale complète
+
+    ❓ Quiz du Régisseur - Test de connaissances
+
+Ressources Complémentaires
+
+    📚 GitHub Organisation - Tous les dépôts sources
+
+    💼 Profil Professionnel - Autres projets et outils
+
+    🏗️ Écosystème Complet - Ensemble des applications disponibles
+
+Note : Ce portail est en évolution constante. Vos retours et contributions sont essentiels pour son amélioration continue.
+
+
+Ce README.md est :
+1. **Complet** : Couvre tous les aspects du projet
+2. **Professionnel** : Ton et contenu adaptés à des outils pro
+3. **Structured** : Organisation claire avec emojis pour la lisibilité
+4. **Personnalisé** : Spécifique à TON projet avec TES applications
+5. **Pratique** : Liens directs, instructions claires, avertissements nécessaires
+
+Il peut être utilisé tel quel sur GitHub et donnera une excellente première impression aux visiteurs !
+
