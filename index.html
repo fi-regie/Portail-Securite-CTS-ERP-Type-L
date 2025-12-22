@@ -122,48 +122,48 @@
         </div>
     </nav>
 
-    <!-- Navigation par Onglets -->
-    <div class="bg-white border-b border-gray-200 sticky top-0 z-40">
-        <div class="max-w-8xl mx-auto">
-            <nav class="flex overflow-x-auto no-scrollbar">
-                <button onclick="switchTab('accueil')"
-                    class="nav-tab active px-6 py-4 border-b-2 border-orange-600 text-orange-600 font-semibold whitespace-nowrap flex items-center">
-                    <i class="fas fa-home mr-2"></i>
-                    Accueil
-                </button>
-                <button onclick="openStructuresApp()"
-                    class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
-                    <i class="fas fa-wind mr-2"></i>
-                    Structures Itinérantes
-                </button>
-                <button onclick="openSimulationApp()"
-                    class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
-                    <i class="fas fa-calculator mr-2"></i>
-                    Simulation Sécurité
-                </button>
-                <button onclick="openIncendieApp()"
-                    class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-red-600 whitespace-nowrap flex items-center">
-                    <i class="fas fa-fire mr-2"></i>
-                    Sécurité Incendie
-                </button>
-                <button onclick="openFormationApp()"
-                    class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
-                    <i class="fas fa-graduation-cap mr-2"></i>
-                    Formation Sécurité
-                </button>
-                <button onclick="openReglementationApp()"
-                    class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
-                    <i class="fas fa-scale-balanced mr-2"></i>
-                    Règlementation CTS
-                </button>
-                <button onclick="openQuizApp()"
-                    class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-emerald-600 whitespace-nowrap flex items-center">
-                    <i class="fas fa-question-circle mr-2"></i>
-                    Quiz du Régisseur
-                </button>
-            </nav>
-        </div>
+<!-- Navigation par Onglets -->
+<div class="bg-white border-b border-gray-200 sticky top-0 z-40">
+    <div class="max-w-8xl mx-auto">
+        <nav class="flex overflow-x-auto no-scrollbar">
+            <button onclick="switchTab('accueil')"
+                class="nav-tab active px-6 py-4 border-b-2 border-orange-600 text-orange-600 font-semibold whitespace-nowrap flex items-center">
+                <i class="fas fa-home mr-3"></i>
+                Accueil
+            </button>
+            <button onclick="openStructuresApp()"
+                class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
+                <i class="fas fa-tent mr-3"></i>
+                Structures Itinérantes
+            </button>
+            <button onclick="openSimulationApp()"
+                class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
+                <i class="fas fa-calculator mr-3"></i>
+                Simulation Sécurité
+            </button>
+            <button onclick="openIncendieApp()"
+                class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-red-600 whitespace-nowrap flex items-center">
+                <i class="fas fa-fire mr-3"></i>
+                Sécurité Incendie
+            </button>
+            <button onclick="openFormationApp()"
+                class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
+                <i class="fas fa-graduation-cap mr-3"></i>
+                Formation Sécurité
+            </button>
+            <button onclick="openReglementationApp()"
+                class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-orange-600 whitespace-nowrap flex items-center">
+                <i class="fas fa-scale-balanced mr-3"></i>
+                Règlementation CTS
+            </button>
+            <button onclick="openQuizApp()"
+                class="nav-tab px-6 py-4 border-b-2 border-transparent text-gray-600 hover:text-emerald-600 whitespace-nowrap flex items-center">
+                <i class="fas fa-question-circle mr-3"></i>
+                Quiz du Régisseur
+            </button>
+        </nav>
     </div>
+</div>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
 
@@ -297,7 +297,7 @@
                             <div class="p-6">
                                 <div class="flex items-center mb-4">
                                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                                        <i class="fas fa-wind text-blue-600 text-xl"></i>
+                                        <i class="fas fa-tent text-blue-600 text-xl"></i>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900">Structures Itinérantes</h3>
                                 </div>
@@ -506,49 +506,6 @@
                             </div>
                         </div>
 
-                        <!-- Carte Communauté Open Source -->
-                        <div
-                            class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                            <div class="p-6">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
-                                        <i class="fas fa-code-branch text-white text-xl"></i>
-                                    </div>
-                                    <h3 class="text-xl font-bold text-white">Communauté Open Source</h3>
-                                </div>
-                                <p class="text-gray-300 mb-6">
-                                    Ce projet est développé de manière collaborative. Rejoignez la communauté
-                                    pour contribuer et améliorer ensemble ces outils.
-                                </p>
-                                <ul class="space-y-3 mb-6">
-                                    <li class="flex items-center text-white">
-                                        <i class="fas fa-heart text-red-400 mr-3"></i>
-                                        <span>Projet non commercial</span>
-                                    </li>
-                                    <li class="flex items-center text-white">
-                                        <i class="fas fa-users text-blue-400 mr-3"></i>
-                                        <span>Développement collaboratif</span>
-                                    </li>
-                                    <li class="flex items-center text-white">
-                                        <i class="fas fa-share-alt text-green-400 mr-3"></i>
-                                        <span>Partage des connaissances</span>
-                                    </li>
-                                </ul>
-                                <div class="space-y-3">
-                                    <a href="https:" target="_blank"
-                                        class="block w-full bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-4 rounded-lg transition text-center">
-                                        <i class="fab fa-github mr-2"></i>GitHub Repository
-                                    </a>
-                                    <button onclick="alert('Contact : philippe.potier-regie@proton.me')"
-                                        class="block w-full bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-4 rounded-lg transition">
-                                        <i class="fas fa-envelope mr-2"></i>Contactez-nous
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <!-- ==================== ONGLET STRUCTURES ITINÉRANTES ==================== -->
                 <div id="structures" class="tab-content">
